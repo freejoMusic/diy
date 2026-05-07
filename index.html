@@ -4,32 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DIY Projects</title>
+<title>DIY Videos</title>
 
 <style>
 
-body{
-background:#111;
-color:white;
-font-family:Arial;
-padding:40px;
+body {
+  margin: 0;
+  padding: 40px;
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.card{
-background:#1e1e1e;
-padding:15px;
-border-radius:15px;
+/* 🔥 DAS IST DAS GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-video{
-width:50%;
-border-radius:10px;
+/* 🎬 Video-Karten */
+.card {
+  background: #1c1c1c;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effekt */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+  font-size: 16px;
+  padding: 12px;
+  margin: 0;
+}
+
+/* Video Styling */
+video {
+  width: 100%;
+  display: block;
 }
 
 </style>
@@ -37,26 +61,30 @@ border-radius:10px;
 
 <body>
 
-<h1>DIY Projects</h1>
+<h1>Meine DIY Videos</h1>
 
 <div class="grid">
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-<div class="card">
-<h2>Projekt 1</h2>
 
-<video controls>
-<source src="test.mp4" type="video/mp4">
-</video>
+  <div class="card">
+    <h2>Projekt 1</h2>
+    <video controls>
+      <source src="test.mp4" type="video/mp4">
+    </video>
+  </div>
 
-  <h2>Projekt 2</h2>
+  <div class="card">
+    <h2>Projekt 2</h2>
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+  </div>
 
-<video controls>
-<source src="test2.mp4" type="video/mp4">
-</video>
-
-</div>
+  <div class="card">
+    <h2>Projekt 3</h2>
+    <video controls>
+      <source src="video3.mp4" type="video/mp4">
+    </video>
+  </div>
 
 </div>
 
