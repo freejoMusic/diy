@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meine DIY Videos</title>
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+padding:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e1e1e;
+padding:15px;
+border-radius:15px;
+}
+
+video{
+width:100%;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Meine DIY Videos</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>Projekt 1</h2>
+
+<video controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</div>
+
+</body>
+</html>
