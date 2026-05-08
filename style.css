@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 30px;
+  padding: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #f2f2f2;
   background: linear-gradient(135deg, #121212, #1a1a1a, #141414);
@@ -54,7 +54,7 @@ body {
 
 /* TITLE */
 .card h2 {
-  font-size: 15px;
+  font-size: 14px;
   padding: 12px 14px 14px;
   margin: 0;
 }
@@ -74,6 +74,12 @@ body {
   aspect-ratio: 16 / 8;
   object-fit: cover;
   display: block;
+}
+
+/* optional nicer look for video corners */
+.media {
+  overflow: hidden;
+}  display: block;
 }
 
 /* optional nicer look for video corners */
