@@ -85,4 +85,10 @@ body {
 /* optional nicer look for video corners */
 .media {
   overflow: hidden;
+}  display: block;
+}
+
+/* optional nicer look for video corners */
+.media {
+  overflow: hidden;
 }
