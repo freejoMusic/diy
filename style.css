@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px;
 }
@@ -32,9 +31,9 @@ body {
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 22px;
-   max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -71,7 +70,7 @@ body {
 /* MEDIA */
 .media video {
   width: 100%;
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
@@ -80,3 +79,4 @@ body {
 .media {
   overflow: hidden;
 }
+
