@@ -11,19 +11,19 @@ body {
   padding: 20px 20px;
 }
 
-/* HERO SECTION */
-.hero {
+/* he SECTION */
+.he {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.hero h1 {
+.he h1 {
   font-size: 33px;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
-.hero p {
+.he p {
   color: #aaa;
   font-size: 16px;
 }
