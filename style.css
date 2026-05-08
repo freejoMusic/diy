@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 35px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #f2f2f2;
+  background: linear-gradient(135deg, #0b0b0b, #141414, #0e0e0e);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 33px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+   max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  background: #141414;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* TITLE */
+.card h2 {
+  font-size: 15px;
+  padding: 12px 14px 14px;
+  margin: 0;
+}
+
+/* TAGS (wie Genre / Soundbeschreibung) */
+.tag {
+  margin: 0;
+  padding: 12px 14px 14px;
+  color: #8a8a8a;
+  font-size: 13px;
+
+}
+
+/* MEDIA */
+.media video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* optional nicer look for video corners */
+.media {
+  overflow: hidden;
+}
