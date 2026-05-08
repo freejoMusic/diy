@@ -63,4 +63,29 @@
 
 </div>
 
+<script>
+const isSmartphone = /iPhone|Android.+Mobile/i.test(navigator.userAgent);
+
+if (isSmartphone) {
+
+  document.querySelectorAll("video").forEach(video => {
+
+    video.addEventListener("play", () => {
+
+      if (document.fullscreenElement) return;
+
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+
+      } else if (video.webkitEnterFullscreen) {
+        // iPhone Safari
+        video.webkitEnterFullscreen();
+      }
+
+    });
+
+  });
+
+}
+</script>
 </body>
