@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 25px;
+  padding: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #f2f2f2;
   background: linear-gradient(135deg, #121212, #1a1a1a, #141414);
@@ -74,12 +74,6 @@ body {
   aspect-ratio: 16 / 8;
   object-fit: cover;
   display: block;
-}
-
-/* optional nicer look for video corners */
-.media {
-  overflow: hidden;
-}  display: block;
 }
 
 /* optional nicer look for video corners */
