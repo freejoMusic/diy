@@ -1,92 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>DIY Projects</title>
-
-<style>
-
-body {
-  margin: 0;
-  padding: 40px;
-  background: #0f0f0f;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* 🔥 DAS IST DAS GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* 🎬 Video-Karten */
-.card {
-  background: #1c1c1c;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover Effekt */
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-.card h2 {
-  font-size: 16px;
-  padding: 12px;
-  margin: 0;
-}
-
-/* Video Styling */
-video {
-  width: 100%;
-  display: block;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>DIY Projects</h1>
+<div class="container">
 
-<div class="grid">
+  <header class="hero">
+    <h1>DIY Builds</h1>
+    <p>Audio Devices •  Instruments  •  Pedals</p>
+  </header>
 
-  <div class="card">
-    <h2>SSL Style Preamp</h2>
-    <video controls>
-      <source src="test.mp4" type="video/mp4">
-    </video>
-  </div>
+  <div class="grid">
 
-  <div class="card">
-    <h2>Projekt 2</h2>
-    <video controls>
-      <source src="video2.mp4" type="video/mp4">
-    </video>
-  </div>
+    <!-- TRACK / PROJECT 1 -->
+    <div class="card">
+      <h2>SSL 9k Style Preamp</h2>
 
-  <div class="card">
-    <h2>Projekt 3</h2>
-    <video controls>
-      <source src="video3.mp4" type="video/mp4">
-    </video>
+      <div class="media">
+        <video controls poster="thumbs/thumb1.png">
+          <source src="media/test.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p class="tag">SSL 9k5 // Carnhill Trafo and Switching Combo Input...</p>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+      <h2>La3a Style Opto Compressor</h2>
+
+      <div class="media">
+        <video controls poster="thumb2.jpg">
+          <source src="test2.mov" type="video/mp4">
+        </video>
+      </div>
+
+      <p class="tag">GAP 3A Rebuild // Kenetek and Cinemag Upgrades...</p>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card">
+      <h2>Ambient Soundscape</h2>
+
+      <div class="media">
+        <video controls poster="thumb3.jpg">
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p class="tag">Ambient / Cinematic</p>
+    </div>
+
   </div>
 
 </div>
 
 </body>
-</html>
