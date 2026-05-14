@@ -80,3 +80,12 @@ body {
   overflow: hidden;
 }
 
+  object-fit: cover;
+  display: block;
+}
+
+/* optional nicer look for video corners */
+.media {
+  overflow: hidden;
+}
+
